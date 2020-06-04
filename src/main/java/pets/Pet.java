@@ -1,8 +1,10 @@
 package pets;
 
+import behaviours.IFight;
+import game_players.GamePlayers;
 import items.IItem;
 
-public class Pet implements IItem {
+public class Pet implements IItem, IFight {
 
     private String name;
     private String type;
@@ -40,5 +42,13 @@ public class Pet implements IItem {
 
     public String type() {
         return "pet";
+    }
+
+    public void attack(GamePlayers gamePlayers) {
+
+    }
+
+    public void defend() {
+
     }
 }

@@ -1,10 +1,11 @@
 package game_players;
 
+import behaviours.IFight;
 import items.Weapon;
 
 import java.util.ArrayList;
 
-public class Enemy extends GamePlayers {
+public class Enemy extends GamePlayers implements IFight {
 
     private String type;
 
@@ -19,5 +20,13 @@ public class Enemy extends GamePlayers {
 
     public void setType(String type) {
         this.type = type;
+    }
+
+    public void attack(GamePlayers gamePlayers) {
+
+    }
+
+    public void defend() {
+
     }
 }

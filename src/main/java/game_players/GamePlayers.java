@@ -1,10 +1,11 @@
 package game_players;
 
+import behaviours.IFight;
 import items.Weapon;
 
 import java.util.ArrayList;
 
-public abstract class GamePlayers {
+public abstract class GamePlayers implements IFight {
 
     private String name;
     private Weapon weapon;
@@ -48,5 +49,13 @@ public abstract class GamePlayers {
 
     public void setHealth(double health) {
         this.health = health;
+    }
+
+    public void attack(GamePlayers gamePlayers) {
+
+    }
+
+    public void defend() {
+
     }
 }
