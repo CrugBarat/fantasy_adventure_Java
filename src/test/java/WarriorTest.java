@@ -16,9 +16,8 @@ public class WarriorTest {
     public void canDefend(){
         ArrayList<IItem> inventory  = new ArrayList<IItem>();
         Weapon axe = new Weapon("Axe", 10, 5);
-        GamePlayers player = new Warrior("Dave", axe, inventory, 100);
+        GamePlayers player = new Warrior("Dave", axe, inventory, 100, 5);
         player.defend(10);
-        assertEquals(90, player.getHealth(), 0.01);
+        assertEquals(95, player.getHealth(), 0.01);
         }
-    }
 }
