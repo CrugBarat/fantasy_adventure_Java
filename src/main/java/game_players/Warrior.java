@@ -18,7 +18,6 @@ public class Warrior extends GamePlayers {
         this.armour = armour;
     }
 
-
     public void defend(double damage) {
         double health = this.getHealth();
         health -= damage - getArmour();

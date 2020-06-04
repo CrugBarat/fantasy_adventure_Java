@@ -29,7 +29,6 @@ public class RoomTest {
         player = new Mage("Dave", wand, 50, pet);
         enemy = new Enemy("Korg", axe, 50, "Rockman");
         room = new Room("Water Room", player);
-
     }
 
     @Test
@@ -42,7 +41,6 @@ public class RoomTest {
         room.addEnemy(enemy);
         assertEquals(1, room.getEnemiesSize());
     }
-
 
     @Test
     public void canAddLoot() {

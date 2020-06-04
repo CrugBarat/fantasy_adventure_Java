@@ -20,5 +20,4 @@ public class Enemy extends GamePlayers implements IFight {
         this.type = type;
     }
 
-
 }

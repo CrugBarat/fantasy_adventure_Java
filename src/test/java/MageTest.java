@@ -10,7 +10,6 @@ import static org.junit.Assert.assertEquals;
 
 public class MageTest {
 
-
     private Weapon axe;
     private Pet pet;
     private GamePlayers player;

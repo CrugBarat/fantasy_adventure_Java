@@ -12,11 +12,9 @@ public class Mage extends GamePlayers {
         this.pet = pet;
     }
 
-
     public void defend(double damage) {
         double health = this.getHealth();
         double petHealth = this.pet.getHealth();
-
 
         if (petHealth >= damage) {
             petHealth -= damage;

@@ -21,7 +21,6 @@ public class HealerTest {
         axe = new Weapon("Axe", 10, 5);
         player = new Healer("Dave", axe, 50, potion);
         playerToHeal = new Healer("Dave", axe, 50, potion);
-//        enemy = new Enemy("Korg", axe, inventory, 50, "Rockman");
     }
 
     @Test
