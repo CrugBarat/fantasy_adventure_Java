@@ -22,4 +22,10 @@ public class Healer extends GamePlayers {
     public void setPotion(Potion potion) {
         this.potion = potion;
     }
+
+    public void heal(GamePlayers player, double healAmount) {
+        double health = player.getHealth();
+        health += healAmount;
+        player.setHealth(health);
+    }
 }
