@@ -23,11 +23,5 @@ public class Enemy extends GamePlayers implements IFight {
         this.type = type;
     }
 
-    public void attack(GamePlayers gamePlayers) {
 
-    }
-
-    public void defend() {
-
-    }
 }

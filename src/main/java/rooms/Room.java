@@ -3,6 +3,7 @@ package rooms;
 import game_players.Enemy;
 import game_players.GamePlayers;
 import items.IItem;
+import items.Weapon;
 
 import java.util.ArrayList;
 
@@ -48,4 +49,16 @@ public class Room {
         this.name = name;
     }
 
+    public void addEnemy(Enemy enemy) {
+        this.enemies.add(enemy);
+    }
+
+    public void addLoot(Weapon weapon) {
+        this.loot.add(weapon);
+    }
+
+    public void roundOffAttacks(){
+        this.gamePlayer.attack(this.enemies.get(0));
+        this.enemies.get(0).attack(this.gamePlayer);
+    }
 }
