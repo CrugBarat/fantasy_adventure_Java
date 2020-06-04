@@ -1,15 +1,9 @@
-import game_players.Enemy;
 import game_players.GamePlayers;
 import game_players.Healer;
-import game_players.Mage;
-import items.IItem;
 import items.Potion;
 import items.Weapon;
 import org.junit.Before;
 import org.junit.Test;
-import pets.Pet;
-
-import java.util.ArrayList;
 
 import static org.junit.Assert.assertEquals;
 

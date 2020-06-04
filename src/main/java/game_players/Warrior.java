@@ -1,9 +1,6 @@
 package game_players;
 
-import items.IItem;
 import items.Weapon;
-
-import java.util.ArrayList;
 
 public class Warrior extends GamePlayers {
 

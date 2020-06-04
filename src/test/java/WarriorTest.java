@@ -1,13 +1,9 @@
-import com.sun.org.apache.xml.internal.security.utils.EncryptionElementProxy;
 import game_players.Enemy;
 import game_players.GamePlayers;
 import game_players.Warrior;
-import items.IItem;
 import items.Weapon;
 import org.junit.Before;
 import org.junit.Test;
-
-import java.util.ArrayList;
 
 import static org.junit.Assert.assertEquals;
 
@@ -26,7 +22,6 @@ public class WarriorTest {
 
     @Test
     public void canDefend(){
-
         player.defend(10);
         assertEquals(95, player.getHealth(), 0.01);
     }
