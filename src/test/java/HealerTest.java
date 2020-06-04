@@ -20,15 +20,13 @@ public class HealerTest {
     private Potion potion;
     private Healer player;
     private GamePlayers playerToHeal;
-    private ArrayList<IItem> inventory;
 
     @Before
     public void before(){
-        inventory = new ArrayList<IItem>();
         potion = new Potion("Heal 10", 50);
         axe = new Weapon("Axe", 10, 5);
-        player = new Healer("Dave", axe, inventory, 50, potion);
-        playerToHeal = new Healer("Dave", axe, inventory, 50, potion);
+        player = new Healer("Dave", axe, 50, potion);
+        playerToHeal = new Healer("Dave", axe, 50, potion);
 //        enemy = new Enemy("Korg", axe, inventory, 50, "Rockman");
     }
 

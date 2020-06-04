@@ -13,10 +13,10 @@ public abstract class GamePlayers implements IFight {
     private ArrayList<IItem> inventory;
     private double health;
 
-    public GamePlayers(String name, Weapon weapon, ArrayList<IItem> inventory, double health) {
+    public GamePlayers(String name, Weapon weapon, double health) {
         this.name = name;
         this.weapon = weapon;
-        this.inventory = inventory;
+        this.inventory = new ArrayList<IItem>();
         this.health = health;
     }
 

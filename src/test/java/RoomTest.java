@@ -18,20 +18,17 @@ public class RoomTest {
     private Weapon axe;
     private Pet pet;
     private GamePlayers player;
-    private ArrayList<IItem> inventory;
     private Enemy enemy;
     private Room room;
     private ArrayList<Enemy> enemies;
 
     @Before
     public void before(){
-        inventory = new ArrayList<IItem>();
-        inventory = new ArrayList<IItem>();
         pet = new Pet("Fluffy", "Rhino", 50);
         wand = new Weapon("Wand", 10, 5);
         axe = new Weapon("axe", 5, 5);
-        player = new Mage("Dave", wand, inventory, 50, pet);
-        enemy = new Enemy("Korg", axe, inventory, 50, "Rockman");
+        player = new Mage("Dave", wand, 50, pet);
+        enemy = new Enemy("Korg", axe, 50, "Rockman");
         room = new Room("Water Room", player);
 
     }

@@ -15,15 +15,13 @@ public class WarriorTest {
 
     private Weapon axe;
     private GamePlayers player;
-    private ArrayList<IItem> inventory;
     private Enemy enemy;
 
     @Before
     public void before(){
-        inventory = new ArrayList<IItem>();
         axe = new Weapon("Axe", 10, 5);
-        player = new Warrior("Dave", axe, inventory, 100, 5);
-        enemy = new Enemy("Korg", axe, inventory, 50, "Rockman");
+        player = new Warrior("Dave", axe, 100, 5);
+        enemy = new Enemy("Korg", axe, 50, "Rockman");
     }
 
     @Test

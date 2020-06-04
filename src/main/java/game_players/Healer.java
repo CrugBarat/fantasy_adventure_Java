@@ -10,8 +10,8 @@ public class Healer extends GamePlayers {
 
     private Potion potion;
 
-    public Healer(String name, Weapon weapon, ArrayList<IItem> inventory, double health, Potion potion) {
-        super(name, weapon, inventory, health);
+    public Healer(String name, Weapon weapon, double health, Potion potion) {
+        super(name, weapon, health);
         this.potion = potion;
     }
 

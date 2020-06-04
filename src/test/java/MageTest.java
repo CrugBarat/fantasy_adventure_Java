@@ -18,16 +18,14 @@ public class MageTest {
     private Weapon axe;
     private Pet pet;
     private GamePlayers player;
-    private ArrayList<IItem> inventory;
     private Enemy enemy;
 
     @Before
     public void before(){
-        inventory = new ArrayList<IItem>();
         pet = new Pet("Fluffy", "Rhino", 50);
         axe = new Weapon("Axe", 10, 5);
-        player = new Mage("Dave", axe, inventory, 50, pet);
-        enemy = new Enemy("Korg", axe, inventory, 50, "Rockman");
+        player = new Mage("Dave", axe, 50, pet);
+        enemy = new Enemy("Korg", axe, 50, "Rockman");
     }
 
     @Test

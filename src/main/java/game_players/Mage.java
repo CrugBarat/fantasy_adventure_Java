@@ -10,8 +10,8 @@ public class Mage extends GamePlayers {
 
     private Pet pet;
 
-    public Mage(String name, Weapon weapon, ArrayList<IItem> inventory, double health, Pet pet) {
-        super(name, weapon, inventory, health);
+    public Mage(String name, Weapon weapon, double health, Pet pet) {
+        super(name, weapon, health);
         this.pet = pet;
     }
 

@@ -8,8 +8,8 @@ import java.util.ArrayList;
 public class Warrior extends GamePlayers {
 
     private double armour;
-    public Warrior(String name, Weapon weapon, ArrayList<IItem> inventory, double health, double armour) {
-        super(name, weapon, inventory, health);
+    public Warrior(String name, Weapon weapon, double health, double armour) {
+        super(name, weapon, health);
         this.armour = armour;
     }
 

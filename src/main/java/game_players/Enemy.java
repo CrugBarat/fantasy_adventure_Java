@@ -10,8 +10,8 @@ public class Enemy extends GamePlayers implements IFight {
 
     private String type;
 
-    public Enemy(String name, Weapon weapon, ArrayList<IItem> inventory, double health, String type) {
-        super(name, weapon, inventory, health);
+    public Enemy(String name, Weapon weapon, double health, String type) {
+        super(name, weapon, health);
         this.type = type;
     }
 
