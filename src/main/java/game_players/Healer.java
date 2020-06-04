@@ -1,5 +1,6 @@
 package game_players;
 
+import items.Potion;
 import items.Weapon;
 
 import java.util.ArrayList;
