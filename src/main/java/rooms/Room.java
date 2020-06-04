@@ -1,8 +1,8 @@
 package rooms;
 
-import com.sun.xml.internal.bind.v2.runtime.unmarshaller.XsiNilLoader;
 import game_players.Enemy;
 import game_players.GamePlayers;
+import items.IItem;
 
 import java.util.ArrayList;
 
@@ -15,8 +15,8 @@ public class Room {
 
     public Room(String name, GamePlayers gamePlayer) {
         this.name = name;
-        this.loot = new ArrayList<>();
-        this.enemies = new ArrayList<>();
+        this.loot = new ArrayList<IItem>();
+        this.enemies = new ArrayList<Enemy>();
         this.gamePlayer = gamePlayer;
     }
 
