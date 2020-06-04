@@ -27,13 +27,13 @@ The task is to model a fantasy adventure. The game will have players, who will h
 - The game will also have rooms to work through
 - Each room should either have some kind of treasure to collect or an Enemy to defeat before moving on
 
-## MVP
+### MVP
 
 - Create the players and rooms for the adventure
 - Give different players properties/methods that are specific to their own class
 - The user should complete rooms by either collecting treasure or defeating an enemy and a new room will be presented to them
 
-## Extensions
+### Extensions
 
 - Create a Quest for the players to work through
 - Possibly a collection of rooms to go through and the quest completes when all rooms are completed
