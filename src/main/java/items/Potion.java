@@ -1,6 +1,6 @@
 package items;
 
-public class Potion {
+public class Potion implements IItem {
 
     private String name;
     private double healing;
@@ -24,5 +24,9 @@ public class Potion {
 
     public void setHealing(double healing) {
         this.healing = healing;
+    }
+
+    public String type() {
+        return "potion";
     }
 }

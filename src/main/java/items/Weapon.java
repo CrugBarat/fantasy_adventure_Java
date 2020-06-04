@@ -1,6 +1,6 @@
 package items;
 
-public class Weapon {
+public class Weapon implements IItem {
 
     private String name;
     private double damage;
@@ -34,5 +34,9 @@ public class Weapon {
 
     public void setSpeed(double speed) {
         this.speed = speed;
+    }
+
+    public String type() {
+        return "weapon";
     }
 }

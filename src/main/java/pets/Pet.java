@@ -1,6 +1,8 @@
 package pets;
 
-public class Pet {
+import items.IItem;
+
+public class Pet implements IItem {
 
     private String name;
     private String type;
@@ -34,5 +36,9 @@ public class Pet {
 
     public void setHealth(double health) {
         this.health = health;
+    }
+
+    public String type() {
+        return "pet";
     }
 }
