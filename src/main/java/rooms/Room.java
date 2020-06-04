@@ -3,6 +3,7 @@ package rooms;
 import game_players.Enemy;
 import game_players.GamePlayers;
 import items.IItem;
+import items.Weapon;
 
 import java.util.ArrayList;
 
@@ -48,4 +49,26 @@ public class Room {
         this.name = name;
     }
 
+    public void addEnemy(Enemy enemy) {
+        this.enemies.add(enemy);
+    }
+
+    public void addLoot(Weapon weapon) {
+        this.loot.add(weapon);
+    }
+
+    public void roundOffAttacks(){
+        Enemy enemy = this.enemies.get(0);
+
+        this.gamePlayer.attack(enemy);
+
+        if (enemy.getHealth() > 0) {
+            enemy.attack(this.gamePlayer);
+        } else {
+            for (IItem item : enemy.getInventory()){
+                this.gamePlayer.addToInventory(item);
+            }
+
+        }
+    }
 }

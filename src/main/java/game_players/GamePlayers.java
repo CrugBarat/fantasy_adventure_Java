@@ -59,4 +59,8 @@ public abstract class GamePlayers implements IFight {
     public void defend(double damage) {
         this.health -= damage;
     }
+
+    public void addToInventory(IItem item){
+        this.inventory.add(item);
+    }
 }
