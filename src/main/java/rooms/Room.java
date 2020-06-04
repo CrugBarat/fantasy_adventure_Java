@@ -58,7 +58,17 @@ public class Room {
     }
 
     public void roundOffAttacks(){
-        this.gamePlayer.attack(this.enemies.get(0));
-        this.enemies.get(0).attack(this.gamePlayer);
+        Enemy enemy = this.enemies.get(0);
+
+        this.gamePlayer.attack(enemy);
+
+        if (enemy.getHealth() > 0) {
+            enemy.attack(this.gamePlayer);
+        } else {
+            for (IItem item : enemy.getInventory()){
+                this.gamePlayer.addToInventory(item);
+            }
+
+        }
     }
 }
