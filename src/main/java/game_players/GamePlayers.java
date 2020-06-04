@@ -1,5 +1,9 @@
 package game_players;
 
+import items.Weapon;
+
+import java.util.ArrayList;
+
 public abstract class GamePlayers {
 
     private String name;
