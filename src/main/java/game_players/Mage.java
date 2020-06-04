@@ -1,6 +1,7 @@
 package game_players;
 
 import items.Weapon;
+import pets.Pet;
 
 import java.util.ArrayList;
 
