@@ -48,7 +48,8 @@ public class Pet implements IItem, IFight {
 
     }
 
-    public void defend() {
-
+    public void defend(double damage) {
+        this.health -= damage;
     }
+
 }
