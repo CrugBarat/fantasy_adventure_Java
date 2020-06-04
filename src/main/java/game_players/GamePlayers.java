@@ -14,4 +14,35 @@ public abstract class GamePlayers {
         this.health = health;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public Weapon getWeapon() {
+        return weapon;
+    }
+
+    public ArrayList<Weapon> getInventory() {
+        return inventory;
+    }
+
+    public double getHealth() {
+        return health;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setWeapon(Weapon weapon) {
+        this.weapon = weapon;
+    }
+
+    public void setInventory(ArrayList<Weapon> inventory) {
+        this.inventory = inventory;
+    }
+
+    public void setHealth(double health) {
+        this.health = health;
+    }
 }
