@@ -1,6 +1,7 @@
 package game_players;
 
 import behaviours.IFight;
+import items.IItem;
 import items.Weapon;
 
 import java.util.ArrayList;
@@ -9,10 +10,10 @@ public abstract class GamePlayers implements IFight {
 
     private String name;
     private Weapon weapon;
-    private ArrayList<Weapon> inventory;
+    private ArrayList<IItem> inventory;
     private double health;
 
-    public GamePlayers(String name, Weapon weapon, ArrayList<Weapon> inventory, double health) {
+    public GamePlayers(String name, Weapon weapon, ArrayList<IItem> inventory, double health) {
         this.name = name;
         this.weapon = weapon;
         this.inventory = inventory;
@@ -27,7 +28,7 @@ public abstract class GamePlayers implements IFight {
         return weapon;
     }
 
-    public ArrayList<Weapon> getInventory() {
+    public ArrayList<IItem> getInventory() {
         return inventory;
     }
 
@@ -43,7 +44,7 @@ public abstract class GamePlayers implements IFight {
         this.weapon = weapon;
     }
 
-    public void setInventory(ArrayList<Weapon> inventory) {
+    public void setInventory(ArrayList<IItem> inventory) {
         this.inventory = inventory;
     }
 
@@ -52,10 +53,10 @@ public abstract class GamePlayers implements IFight {
     }
 
     public void attack(GamePlayers gamePlayers) {
-
+        gamePlayers.defend(this.weapon.getDamage());
     }
 
-    public void defend() {
-
+    public void defend(double damage) {
+        this.health -= damage;
     }
 }

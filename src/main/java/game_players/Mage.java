@@ -1,5 +1,6 @@
 package game_players;
 
+import items.IItem;
 import items.Weapon;
 import pets.Pet;
 
@@ -9,7 +10,7 @@ public class Mage extends GamePlayers {
 
     private Pet pet;
 
-    public Mage(String name, Weapon weapon, ArrayList<Weapon> inventory, double health, Pet pet) {
+    public Mage(String name, Weapon weapon, ArrayList<IItem> inventory, double health, Pet pet) {
         super(name, weapon, inventory, health);
         this.pet = pet;
     }

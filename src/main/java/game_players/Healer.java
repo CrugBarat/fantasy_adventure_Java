@@ -1,5 +1,6 @@
 package game_players;
 
+import items.IItem;
 import items.Potion;
 import items.Weapon;
 
@@ -9,7 +10,7 @@ public class Healer extends GamePlayers {
 
     private Potion potion;
 
-    public Healer(String name, Weapon weapon, ArrayList<Weapon> inventory, double health, Potion potion) {
+    public Healer(String name, Weapon weapon, ArrayList<IItem> inventory, double health, Potion potion) {
         super(name, weapon, inventory, health);
         this.potion = potion;
     }
